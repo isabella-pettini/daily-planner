@@ -1,56 +1,24 @@
-# daily-planner
+# Daily Planner
 
-## Acceptance Criteria
-GIVEN I am using a daily planner to create a schedule
+## Description
+A daily work planner that will allow you to input your tasks and save them.
 
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
+## Installation
+N/A
 
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
+## Usage
+This daily work planner is a great way to keep your work day tasks organized. At the top of the page the current date and time is displayed. Below are time blocks from the hours of 9AM to 5PM, these time blocks are color coded depending on what time it is. Past tasks will display as a nice calming shade of lavender. Present tasks will display as a gentle baby blue color and future tasks will be displayed as a soothing mint green color. The tasks you input into the time blocks will save to the local storage in your browser once you click the save button to the right of the time block. You won't have to worry about accidentally closing the page and losing any of your very important daily tasks! If a task needs to be removed, just click inside the time block and backspace the task, click save again and voilà, that task is officially off your to do list. 
 
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+<br>
 
-WHEN I click into a timeblock
-THEN I can enter an event
+![alt text](./assets/images/project-image-01.JPG)
 
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
+## Link To Deployed Webpage:
 
-WHEN I refresh the page
-THEN the saved events persist
+[Daily Planner](https://isabella-pettini.github.io/daily-planner/)
 
-WHEN I scroll down, THEN I am presented with timeblocks for standard business hours
-  - Possibly needs a div for each block of time?
-  - May use the jQuery row function for making the two columns with the time and the body of the calendar, with buttons on the right side of it
-  Ex: https://getbootstrap.com/docs/4.0/layout/grid/
-  - May need to mess around with styling to get it to look right
-  - Or consider the versions of jQuery and jQuery UI that are linked appropriately on what version it is
-  - Of note, jQuery adds in a style sheet of its own that messes with formatting and presentation
+## Credits:
+N/A
 
-WHEN I view the timeblocks for that day, THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-  - Will need to coordinate the classes/ids from the CSS to match the appropriate HTML
-  - Past is gray, current hour is red, future is green
-  - Need a function that checks what time it currently is and changes the color
-  - Might need an if statement
-  Moment.js docs might have some clues
-
-WHEN I click into a timeblock, THEN I can enter an event
-WHEN I click the save button for that timeblock
-  - <form>
-  - If need to delete a calendar event, consider the following from activity 05/06
-  - Ex:   // Clear input fields
-  $('input[type="text"]').val('');
-  $('input[type="email"]').val('');
-  $('input[type="checkbox"]').prop('checked', false);
-}
-  - May consider using the jQuery button options: https://api.jqueryui.com/button/#event-create
-
-
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-  - Reference 21-24 in the Web APIs activities
-  - https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-
+## License:
+Please refer to the LICENSE in the repo.
